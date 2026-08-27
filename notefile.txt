@@ -1,0 +1,5 @@
+Hello from notes.txt
+This is line two.
+I got to revisit scripting.
+AWS AI Programming Nanodegree
+
