@@ -3,3 +3,4 @@ This is line two.
 I got to revisit scripting.
 AWS AI Programming Nanodegree
 
+This line has been written through a script

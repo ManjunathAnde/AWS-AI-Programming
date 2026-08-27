@@ -11,3 +11,9 @@ except IndexError:
 except FileNotFoundError:
     print("There is no such file in the project folder")
 
+try:
+    with open(filename,"a") as f:
+        f.write("This line has been written through a script\n")
+except FileNotFoundError:
+    print("There is no such file in the folder")
+    
