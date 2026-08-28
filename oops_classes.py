@@ -26,4 +26,19 @@ class Student:
             return 0
         return max(self.scores)
 
-    
+    def passed(self, cutoff=50): #default cutoff is 50
+        """Check if average is above cutoff."""
+        return self.average() >= cutoff
+
+    def __str__(self):
+        """What print(object) shows."""
+        status = "PASS" if self.passed() else "FAIL"
+        return f"{self.name} | Avg: {self.average():.1f} | {status}"
+
+    def __add__(self, other):
+        """Combine two students' scores into a new group."""
+        combined_name = f"{self.name} & {other.name}"
+        combined_scores = self.scores + other.scores
+        return Student(combined_name, combined_scores)
+
+
